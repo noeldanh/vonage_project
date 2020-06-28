@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 0.5em;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+
+input,
+button {
+  font-size: inherit;
+  padding: 0.5em;
+}
+
+/*#video-main {*/
+/*    display: none;*/
+/*}*/
+
+#enter-name {
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: table;
+    text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.center > .child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.registration input[type="text"] {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.subscriber,
+.screen.sub-active {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.screen.pub-inactive {
+  display: none;
+}
+
+
+#screen-share-off {
+  display: none;
+}
+
+.publisher {
+  position: absolute;
+  width: 25vmin;
+  height: 25vmin;
+  min-width: 8em;
+  min-height: 8em;
+  align-self: flex-end;
+}
+
+.screen-share {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#textchat {
+    position: relative;
+    width: 20%;
+    float: right;
+    right: 0;
+    height: 100%;
+    background-color: #333;
+}
+#history {
+     width: 100%;
+     height: calc(100% - 40px);
+     overflow: auto;
+}
+input#msgTxt {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+}
+#history .mine {
+    color: #00FF00;
+    text-align: right;
+    margin-right: 10px;
+}
+#history .theirs {
+    color: #00FFFF;
+    margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em;
+}

@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+      <title> OpenTok Getting Started </title>
+      <link href="css/app.css" rel="stylesheet" type="text/css">
+      <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js" charset="utf-8"></script>
+    </head>
+
+    <body>
+      <section id="name-section" class="center">
+          <div class="child">
+            <h3>Enter your name:</h3>
+            <input type="text" id="enter-name" class="child">
+            <button id="join-meeting">Join Meeting</button>
+          </div>
+      </section>
+
+      <main id="video-main">
+          <div id="screen" class="screen"></div>
+          <div id="subscriber" class="subscriber"></div>
+          <div id="publisher" class="publisher"></div>
+
+          <div>
+            <button id="audio-toggle"></button>
+            <button id="video-toggle"></button>
+            <button id="screen-share-on">Screen Share On</button>
+            <button id="screen-share-off">Screen Share Off</button>
+          </div>
+
+          <div id="textchat">
+            <p id="history"></p>
+            <form>
+              <input type="text" placeholder="Input your text here" id="msgTxt">
+            </form>
+          </div>
+      </main>
+
+
+
+      <script type="text/javascript" src="js/app.js"></script>
+    </body>
+
+</html>
