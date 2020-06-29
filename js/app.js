@@ -1,5 +1,6 @@
 // replace these values with those generated in your TokBox Account
 
+
 var session;
 var publisher;
 var options = {
@@ -15,6 +16,7 @@ var elements = {
     'name_section': document.getElementById("name-section"),
     'video_main': document.getElementById("video-main")
 };
+
 var username;
 
 elements.video_main.style.display = "none";
@@ -33,8 +35,8 @@ function initializeSession() {
 function sessionCallBack(session) {
   let sessionOptions = {
       insertMode: "append",
-      width: "100%",
-      height: "100%"
+      width: "50%",
+      height: "50%"
   };
 
   session.on('streamCreated', function(event) {
@@ -105,17 +107,17 @@ function initializePublisher(session) {
 
 function audioState(state) {
   if (state === true) {
-    options.audio.innerText = "Audio On"
-  } else {
     options.audio.innerText = "Audio Off"
+  } else {
+    options.audio.innerText = "Audio On"
   }
 }
 
 function videoState(state) {
   if (state === true) {
-    options.video.innerText = "Video On"
-  } else {
     options.video.innerText = "Video Off"
+  } else {
+    options.video.innerText = "Video On"
   }
 }
 
