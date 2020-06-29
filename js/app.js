@@ -1,8 +1,4 @@
 // replace these values with those generated in your TokBox Account
-var apiKey =
-var sessionId =
-var token =
-var secret =
 
 var session;
 var publisher;
@@ -206,7 +202,7 @@ form.addEventListener('submit', function submit(event) {
 
   session.signal({
     type: 'msg',
-    data: msgTxt.value
+    data: username + ": " + msgTxt.value
   }, function signalCallback(error) {
     if (error) {
       console.error('Error sending signal:', error.name, error.message);
