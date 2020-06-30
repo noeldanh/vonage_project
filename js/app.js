@@ -1,5 +1,7 @@
 // replace these values with those generated in your TokBox Account
-
+var apiKey = "";
+var sessionId = "";
+var token = "";
 
 var session;
 var publisher;
@@ -22,7 +24,6 @@ var username;
 elements.video_main.style.display = "none";
 
 // (optional) add server code here
-
 
 function initializeSession() {
   session = OT.initSession(apiKey, sessionId);
