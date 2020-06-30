@@ -1,9 +1,5 @@
 # vonage_project
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
 This is a boilerplate Vonage (Opentok) video app which showcases the various tools and functionality of the OpenTok API.  
 
 The functionalities include:
@@ -29,7 +25,7 @@ To get started, you'll need:
 
 ### How To
 
-1. Once you've pulled the github repository you will need to add your OpenTok Credentials to the `app.js` file:
+1. Once you've pulled the github repository you'll need to add in your OpenTok Credentials to the `app.js` file:
 
 ```javascript
 var apiKey = "";
