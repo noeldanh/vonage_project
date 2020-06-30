@@ -1,6 +1,6 @@
 # vonage_project
 
-This is a boilerplate Vonage (Opentok) video app which showcases the various tools and functionality of the OpenTok API.  
+This is a boilerplate Vonage (Opentok) video app which showcases some of the various tools and functionality of the OpenTok API.  
 
 The functionalities include:
 * Video Conferencing
